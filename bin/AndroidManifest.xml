@@ -1,0 +1,121 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nhc.nhc_game"
+    android:versionCode="1"
+    android:versionName="1.0" >
+	<uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launch_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity android:name=".view.LoginView" 
+            android:label="@string/app_name">
+    	<intent-filter>
+        	<action android:name="android.intent.action.MAIN" />
+        	<category android:name="android.intent.category.LAUNCHER" />
+   		</intent-filter>
+    	</activity>
+    	
+        <activity android:name=".view.RegisterView"
+                  android:label="@string/registerView_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+        </activity>
+        
+   <activity android:name=".view.ProfileView"
+                  android:label="@string/profileView_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+        </activity>  
+    
+   <activity android:name=".view.HomeView"
+                  android:label="@string/homeView_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+        </activity> 
+        
+   <activity android:name=".view.ForumView"
+                  android:label="@string/forumView_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+        </activity> 
+        
+   <activity android:name=".view.ScoreBoardView"
+                  android:label="@string/scoreboardView_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+        </activity> 
+        
+   <activity android:name=".view.BenchmarkView"
+                  android:label="@string/benchmarkView_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+        </activity> 
+        
+   <activity android:name=".view.ExerciseView"
+                  android:label="@string/exerciseView_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+        </activity> 
+   
+   <activity android:name=".view.ImportView"
+                  android:label="@string/importView_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+        </activity> 
+        
+   <activity android:name=".view.InviteView"
+                  android:label="@string/inviteView_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+        </activity> 
+        
+   <activity android:name=".view.StateRankView"
+                  android:label="@string/staterankView_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+        </activity> 
+        
+   <activity android:name=".view.EditView"
+                  android:label="@string/staterankView_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+        </activity> 
+        
+   <activity android:name=".view.WebsiteView"
+                  android:label="@string/websiteView_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+        </activity> 
+    </application>
+</manifest>
